@@ -1,37 +1,42 @@
-# S.Overlap
+# Overlap — Open Source Meeting Poll & Time Finder
 
-**Simple name:** Overlap
+**Overlap** finds the hour that works for everyone. Create a poll, share a link, collect availability, and pick the slot — no calendar admin, no “what time works?” thread.
 
-Find a meeting time that works for everyone.
+[![License: MIT](https://img.shields.io/badge/License-MIT-skyblue.svg)](LICENSE)
 
-This is a Grok App Builder project. The sandbox npm name was `app-builder-workspace`. On GitHub it is **S.Overlap** (private).
+## Features
 
-## Run on this Mac
+- Fast **when2meet / Doodle-style** availability polls
+- Guest-friendly — respondents do not need an account
+- Shareable event links
+- Recents for polls you created
+- Works locally with PGLite (no hosted Postgres required)
 
-Need **Node.js 22** and **npm**. Postgres is not required (uses PGLite in the browser/process).
+## Who it is for
+
+- Remote teams scheduling across time zones
+- Friends planning a call
+- Anyone replacing a long WhatsApp “kal 5?” chain
+
+## Quick start
 
 ```bash
-cd "/Users/akshitpareta/Documents/S-projects/S.Overlap"
+git clone https://github.com/Akshit1018/S.Overlap.git
+cd S.Overlap
 npm install
-npm run dev
-```
-
-Open http://127.0.0.1:8080
-
-To skip Grok login in local preview:
-
-```bash
 VITE_AUTH_ENABLED=false npm run dev
 ```
 
-Optional AI (only if this app calls Grok): set `XAI_API_KEY`.
+Open [http://127.0.0.1:8080](http://127.0.0.1:8080).
 
-## Scripts
+## Tech stack
 
-- `npm run dev` — Vite on port 8080
-- `npm run build` — production build + DB migrate (skipped without DATABASE_URL)
-- `npm run typecheck`
+React 19 · TanStack Start · Vite · Tailwind · PGLite
 
-## Notes
+## License
 
-Do not commit `.env`, `node_modules`, or `.grok/`.
+[MIT](LICENSE)
+
+## Keywords
+
+meeting poll, find a time, scheduling app, doodle alternative, when2meet alternative, group availability, open source calendar poll
